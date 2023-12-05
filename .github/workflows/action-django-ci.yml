@@ -1,0 +1,57 @@
+name: Django CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-job:
+
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 4
+      matrix:
+        python-version: [3.9]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install Action Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r .github/action-django-ci-requirements.txt
+
+    - name: Install Project Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r guestbook/requirements.txt
+
+    - name: Lint and Format
+      run: |
+        flake8 guestbook
+        isort guestbook
+        black guestbook
+
+    - name: Check Migrations
+      run: |
+        python guestbook/manage.py makemigrations --check --dry-run
+
+    - name: Check Security
+      run: |
+        bandit -r .
+
+    - name: Check Test Coverage
+      run: |
+        coverage run guestbook/manage.py test
+        coverage report -m --fail-under=80
+
+    - uses: pre-commit-ci/lite-action@v1.0.1 # Commit changes if needed
+    if: always()
+
