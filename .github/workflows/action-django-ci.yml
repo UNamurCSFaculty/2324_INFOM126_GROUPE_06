@@ -35,9 +35,9 @@ jobs:
 
     - name: Lint and Format
       run: |
-        flake8 guestbook
         isort guestbook
         black guestbook
+        flake8 guestbook
 
     - name: Check Migrations
       run: |
