@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Guestbook{% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <h1>Guestbook</h1>
+    <hr>
+    <div class="">
+        <h2>Messages</h2>
+        {% if messages %}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Creator</th>
+                    <th>Date</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for message in messages %}
+                <tr>
+                    <td>{{ message.creator_name }}</td>
+                    <td>{{ message.created_at }}</td>
+                    <td>{{ message.text }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <tr>
+            <td colspan="3">No messages yet.</td>
+        </tr>
+        {% endif %}
+    </div>
+
+    <br>
+
+    <div class="col-md-6">
+        <h2>Leave a message</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+{% endblock %}
