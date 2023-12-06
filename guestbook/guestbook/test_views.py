@@ -1,7 +1,5 @@
 from django.test import TestCase, Client
 from django.urls import reverse
-from django.core.exceptions import ValidationError
-from django.utils import timezone
 from .models import Message
 from .forms import MessageForm
 
