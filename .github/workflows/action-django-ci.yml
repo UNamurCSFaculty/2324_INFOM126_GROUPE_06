@@ -37,6 +37,7 @@ jobs:
       run: |
         isort guestbook
         black guestbook
+        cat ./guestbook/guestbook/test_models.py
         flake8 --config ./config/.flake8 guestbook
 
     - name: Check Migrations
