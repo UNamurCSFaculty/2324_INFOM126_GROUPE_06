@@ -36,8 +36,7 @@ jobs:
     - name: Lint and Format
       run: |
         isort guestbook
-        black guestbook
-        cat ./guestbook/guestbook/test_models.py
+        black --config ./config/.black guestbook
         flake8 --config ./config/.flake8 guestbook
 
     - name: Check Migrations
