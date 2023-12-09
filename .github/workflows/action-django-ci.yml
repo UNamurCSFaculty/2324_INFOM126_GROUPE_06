@@ -37,7 +37,7 @@ jobs:
       run: |
         isort guestbook
         black guestbook
-        flake8 guestbook
+        flake8 --config ./config/.flake8 guestbook
 
     - name: Check Migrations
       run: |
