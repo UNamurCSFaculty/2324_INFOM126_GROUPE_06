@@ -5,9 +5,8 @@ Thank you for your interest in contributing to our Django project! We welcome co
 ## Getting Started
 
 1. Fork the repository and clone it to your local machine.
-2. Install the project dependencies by running `pip install -r requirements.txt`.
 3. Create a new branch for your changes: `git checkout -b feature/your-feature-name`.
-4. Make your changes and ensure that the tests pass.
+4. Make your changes and ensure that the tests pass. You can launch the project with `docker-compose -f docker-compose.dev.yml up --build` and then run the tests with `docker exec -it django python manage.py test`.
 5. Commit your changes: `git commit -m "Add your commit message"`.
 6. Push your changes to your forked repository: `git push origin feature/your-feature-name`.
 7. Open a pull request to the main repository.
