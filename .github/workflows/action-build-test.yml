@@ -33,7 +33,7 @@ jobs:
       run: |
         isort guestbook
         black --config ./config/.black guestbook
-        pylint --rcfile=./config/.pylintrc ./guestbook
+        pylint --rcfile=./config/.pylintrc *.py
         flake8 --config ./config/.flake8 guestbook
     - name: Run Tests
       run: |
