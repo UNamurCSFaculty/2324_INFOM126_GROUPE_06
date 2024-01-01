@@ -16,7 +16,8 @@ class MessageModelTest(TestCase):
         self.assertIsNotNone(message.created_at)
 
     def test_message_clean_method(self):
-        # Create a message with leading/trailing whitespaces and an invalid creator name
+        # Create a message with leading/trailing whitespaces and an 
+        # invalid creator name
         message = Message(
             text="   Hello, world!   ",
             creator_name="John Doe"

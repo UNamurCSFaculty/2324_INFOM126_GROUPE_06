@@ -21,7 +21,8 @@ class Message(models.Model):
     def clean(self) -> None:
         """
         Clean method for the Message model.
-        It strips leading and trailing whitespaces from the text and creator_name fields.
+        It strips leading and trailing whitespaces from the text and 
+        creator_name fields.
         It also validates that the creator_name starts with a letter.
         """
         self.text = self.text.strip()
