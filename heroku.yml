@@ -4,7 +4,6 @@ setup:
     as: DATABASE
   config:
     ALLOWED_HOSTS: "guestbook-infom126-2088e1f894b8.herokuapp.com"
-    CSRF_TRUSTED_ORIGINS: "https://guestbook-infom126-2088e1f894b8.herokuapp.com"
     DEBUG: "false"
 
 build:
