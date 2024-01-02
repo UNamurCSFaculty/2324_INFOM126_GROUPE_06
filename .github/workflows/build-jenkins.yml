@@ -1,0 +1,22 @@
+name: Jenkins Build Hook
+
+on:
+  pull_request:
+    branches:
+      - master
+    types: 
+      - closed
+    
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: trigger single Job
+      uses: appleboy/jenkins-action@master
+      with:
+        url: "${{ secrets.JENKINS_HOST_URL }}/job/ASE-Pipeline/build?token=${{ secrets.JENKINS_TOKEN }}"
+        user: "zetioz"
+        token: ${{ secrets.JENKINS_TOKEN }}
+        job: "ASE-Pipeline"
