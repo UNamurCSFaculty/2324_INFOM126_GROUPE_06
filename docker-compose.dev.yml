@@ -11,6 +11,5 @@ services:
       - "DEBUG=true"
       - "SECRET_KEY=django-insecure-&6xif^-r0on%up3t%h-xt5t6#vv9tod42+*mds-kz7xc@2b(jm"
       - "ALLOWED_HOSTS=localhost"
-      - "CSRF_TRUSTED_ORIGINS=http://localhost"
       - "DATABASE_URL=sqlite:///db.sqlite3"
       - "PORT=8000"
