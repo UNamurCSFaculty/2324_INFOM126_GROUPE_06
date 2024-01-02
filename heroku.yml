@@ -1,0 +1,11 @@
+setup:
+  addons:
+  - plan: heroku-postgresql
+    as: DATABASE
+  config:
+    ALLOWED_HOSTS: "guestbook-infom126-2088e1f894b8.herokuapp.com"
+    DEBUG: "false"
+
+build:
+  docker:
+    web: guestbook/Dockerfile
