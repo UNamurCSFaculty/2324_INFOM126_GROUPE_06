@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - name: Install tox and any other packages
-        run: pip install tox, pytest, pytest-django, pytest-factoryboy, pytest-cov
+        run: pip install tox pytest pytest-django pytest-factoryboy pytest-cov
       - name: Run tox
         run: tox -e py
       - name: Run pytest
