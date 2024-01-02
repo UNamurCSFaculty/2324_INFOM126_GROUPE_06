@@ -2,16 +2,14 @@ name: Jenkins Build Hook
 
 on:
   pull_request:
-    branches:
-      - master
     types: 
       - closed
     
 jobs:
-
   build:
     name: Build
     runs-on: ubuntu-latest
+    permissions: read-all
     steps:
     - name: trigger single Job
       uses: appleboy/jenkins-action@master
