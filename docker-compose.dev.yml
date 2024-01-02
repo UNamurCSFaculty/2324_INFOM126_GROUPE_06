@@ -5,10 +5,9 @@ services:
       context: ./guestbook
       dockerfile: Dockerfile
     container_name: guestbook
-    ports:
-      - "8000:8000"
     environment:
       - "DEBUG=true"
       - "SECRET_KEY=django-insecure-&6xif^-r0on%up3t%h-xt5t6#vv9tod42+*mds-kz7xc@2$(jm"
       - "ALLOWED_HOSTS=localhost"
       - "DATABASE_URL=sqlite:///db.sqlite3"
+      - "PORT=8000"
