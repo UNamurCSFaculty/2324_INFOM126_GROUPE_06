@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Set Label and Project
+      - name: Set Label
         run: |
           # Get the issue number
           ISSUE_NUMBER=$(jq --raw-output .issue.number "$GITHUB_EVENT_PATH")
@@ -26,15 +26,9 @@ jobs:
             -H "Accept: application/vnd.github.v3+json" \
             https://api.github.com/repos/${{ github.repository }}/issues/$ISSUE_NUMBER/labels \
             -d '["triage"]'
-
-          # Set project for the new issue
-          echo "Setting project for issue $ISSUE_NUMBER"
-          curl \
-            -X POST \
-            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Accept: application/vnd.github.inertia-preview+json" \
-            https://api.github.com/repos/${{ github.repository }}/projects/columns/0/cards \
-            -d '{"content_id":'$ISSUE_NUMBER',"content_type":"Issue"}'
-
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+      - name: Set Project
+        uses: actions/add-to-project@RELEASE_VERSION
+        with:
+          project-url: https://github.com/orgs/UNamurCSFaculty/projects/10
+          github-token: ${{ secrets.GITHUB_TOKEN }}
