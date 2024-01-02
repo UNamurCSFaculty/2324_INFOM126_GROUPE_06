@@ -1,8 +1,10 @@
+"""Module for views."""
 from django.views.generic import ListView
 from .models import Message
 from .forms import MessageForm
 from django.shortcuts import redirect
 
+"""View for listing all messages in the guestbook."""
 class MessageListView(ListView):
     """
     View for listing all messages in the guestbook.
@@ -28,8 +30,7 @@ class MessageListView(ListView):
         if form.is_valid():
             form.save()
             return redirect('message-list')
-        else:
-            self.object_list = self.get_queryset()
-            context = self.get_context_data(**kwargs)
-            context['form'] = form
-            return self.render_to_response(context)
+        self.object_list = self.get_queryset()
+        context = self.get_context_data(**kwargs)
+        context['form'] = form
+        return self.render_to_response(context)

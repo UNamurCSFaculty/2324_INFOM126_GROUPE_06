@@ -1,10 +1,13 @@
+"""Module for testing the models of the guestbook app."""
 from django.test import TestCase
 from django.core.exceptions import ValidationError
 from .models import Message
 
+
+"""TestCase for the Message model."""
 class MessageModelTest(TestCase):
     def test_message_creation(self):
-        # Create a message
+        """Testing creation of message."""
         message = Message.objects.create(
             text="Hello, world!",
             creator_name="John Doe"
@@ -16,8 +19,8 @@ class MessageModelTest(TestCase):
         self.assertIsNotNone(message.created_at)
 
     def test_message_clean_method(self):
-        # Create a message with leading/trailing whitespaces and an 
-        # invalid creator name
+        """Create a message with leading/trailing whitespaces and an
+        invalid creator name"""
         message = Message(
             text="   Hello, world!   ",
             creator_name="John Doe"
@@ -36,7 +39,7 @@ class MessageModelTest(TestCase):
             message.clean()
 
     def test_message_save_method(self):
-        # Create a message
+        """Testing saving a message."""
         message = Message(
             text="Hello, world!",
             creator_name="John Doe"

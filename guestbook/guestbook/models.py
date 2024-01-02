@@ -1,3 +1,4 @@
+"""Basic classes of the guestbook app."""
 from django.db import models
 from django.core.exceptions import ValidationError
 
