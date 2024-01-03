@@ -73,4 +73,4 @@ Si vous rencontrez des problèmes ou avez des suggestions, veuillez signaler une
 Nous sommes ravis que vous souhaitiez contribuer à GuestBook ! Consultez le fichier [`contributor.md`](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06/blob/main/contributor.md) pour obtenir des informations sur la manière de participer au développement.
 
 ## Licence
-Ce projet est sous licence MIT.
+Ce projet est sous licence [MIT](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06/blob/main/LICENSE).
