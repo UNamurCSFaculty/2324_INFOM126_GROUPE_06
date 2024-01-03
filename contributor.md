@@ -53,44 +53,6 @@ Thank you for your interest in contributing to our Django project! We welcome co
 
 For any communication, please refer to [this section](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06/blob/main/README.md#contacting-us)
 
-### Issue template
-
-```text
-Issue Title:
-[Concise and descriptive title of the issue]
-
-Description:
-[Provide a clear and detailed description of the issue. Include information such as what you were trying to achieve, what happened, and any error messages or unexpected behavior you encountered. If applicable, provide steps to reproduce the issue.]
-
-Expected Behavior:
-[Describe what you expected to happen when encountering this issue.]
-
-Actual Behavior:
-[Describe what actually happened when encountering this issue.]
-
-Environment:
-Operating System: [e.g., Windows 10, macOS, Linux]
-Browser (if applicable): [e.g., Chrome, Firefox, Safari]
-Version/Commit: [Specify the version or commit of the software or project you are using]
-
-Additional relevant environment details:
-Steps to Reproduce:
-[Step 1]
-[Step 2]
-[Step 3]
-...
-
-Screenshots (if applicable):
-[Include screenshots that help visualize the issue. This can be especially helpful for UI-related problems.]
-
-Additional Information:
-[Provide any additional information that might be relevant, such as workarounds you've attempted, logs, or related issues.]
-
-Related Issues:
-[If there are any related issues, mention them here.]
-
-```
-
 ## Join the Community
 - Want to find others to discuss/promote our django project? Add yourself to the project discord server [here](https://discord.gg/).
 
