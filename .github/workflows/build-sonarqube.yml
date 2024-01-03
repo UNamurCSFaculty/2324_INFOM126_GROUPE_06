@@ -21,8 +21,6 @@ jobs:
           python-version: ${{ matrix.python }}
       - name: Install tox and any other packages
         run: pip install tox
-      - name: Going into the right folder
-        run: cd ./guestbook/
       - name: Run tox
         run: tox -e py
       - name: SonarQube Scan
