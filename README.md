@@ -56,6 +56,10 @@ GuestBook est également disponible en tant que conteneur Docker. Pour exécuter
   docker run -p 5000:5000 guestbook-app
   ```
 
+## Etat des services
+
+Le status des outils que nous utilisons sont disponible [ici](https://status.donatog.tech/)
+
 ## Qualité du Code avec SonarQube
 
 Nous utilisons SonarQube pour évaluer la qualité du code. Celui-ci est disponible à l'adresse : [Sonarqube](https://sonarqube.donatog.tech/dashboard?branch=main&id=UNamurCSFaculty_2324_INFOM126_GROUPE_06_AYzK-Ug0b_xiqrlTOeSt)
