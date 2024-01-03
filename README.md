@@ -21,7 +21,6 @@ The application is available and accessible via this link https://guestbook-info
 
 Make sure you have the following elements installed on your machine before setting up the project:
 
-- Python (version 3.11 recommended)
 - Docker
 
 ### Installation
