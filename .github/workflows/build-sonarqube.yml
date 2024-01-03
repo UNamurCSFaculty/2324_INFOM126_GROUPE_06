@@ -1,4 +1,4 @@
-name: Sonarqueb Build Hook
+name: Sonarqube Build Hook
 
 on:
   pull_request:
