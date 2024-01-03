@@ -32,7 +32,7 @@ jobs:
       - name: Run tests
         run: |
           cd ./guestbook/
-          coverage run -m pytest manage.py
+          coverage run -m pytest
           coverage xml
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master
