@@ -23,8 +23,9 @@ jobs:
         run: pip install tox
       - name: Run tests
         run: |
+          pip install django crispy-bootstrap5 dj-database-url whitenoise psycopg2-binary pytest pytest-cov pytest-django pytest-factoryboy
           cd ./guestbook/
-          python ./manage.py test
+          python manage.py test
       #- name: Run tox
       #  run: tox -e py
       - name: SonarQube Scan
