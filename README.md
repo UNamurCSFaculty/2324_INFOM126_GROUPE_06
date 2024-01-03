@@ -12,69 +12,62 @@
 
 ## Description
 
-GuestBook est une application Python qui permet de collecter des messages en entrée et de les afficher. L'application fournit une interface conviviale pour les utilisateurs afin de laisser des messages et de les visualiser.
-L'application est disponible est accessible via ce lien https://guestbook-infom126-2088e1f894b8.herokuapp.com/
+GuestBook is a Python application that allows collecting input messages and displaying them. The application provides a user-friendly interface for users to leave messages and view them.
+The application is available and accessible via this link https://guestbook-infom126-2088e1f894b8.herokuapp.com/
 
-## Setup du Projet
+## Setup of the Projet
 
-### Prérequis
+### Prerequisites
 
-Assurez-vous d'avoir les éléments suivants installés sur votre machine avant de configurer le projet :
+Make sure you have the following elements installed on your machine before setting up the project:
 
-- Python (version 3.11 recommandée)
-- Pip (gestionnaire de paquets Python)
-- Virtualenv
+- Python (version 3.11 recommended)
 
-### Étapes d'Installation
+### Installation
 
-1. Clonez le dépôt Git :
+1. Clone the repo Git :
 
     ```bash
     git clone https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06.git
     cd 2324_INFOM126_GROUPE_06
     ```
 
-2. Créez un environnement virtuel (optionnel mais recommandé) :
-
-    ```bash
-    virtualenv venv
-    source venv/bin/activate  # Sous Windows: venv\Scripts\activate
-    ```
-
-3. Installez les dépendances du projet :
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-## Utilisation de Docker
-
-GuestBook est également disponible en tant que conteneur Docker. Pour exécuter l'application dans un conteneur, utilisez les commandes suivantes :
+## Usage of Docker
+GuestBook is also available as a Docker container. To run the application in a container, use the following commands:
 
   ```bash
-  docker build -t guestbook-app .
-  docker run -p 5000:5000 guestbook-app
+  docker-compose -f docker-compose.dev.yml up --build
   ```
 
-## Etat des services
+## Status of services
 
-Le status des outils que nous utilisons est disponible [ici](https://status.donatog.tech/)
+The status of the tools we use is available [here](https://status.donatog.tech/)
 
-## Qualité du Code avec SonarQube
+## Quality of the Code with SonarQube
 
-Nous utilisons SonarQube pour évaluer la qualité du code. Celui-ci est disponible à l'adresse : [Sonarqube](https://sonarqube.donatog.tech/dashboard?branch=main&id=UNamurCSFaculty_2324_INFOM126_GROUPE_06_AYzK-Ug0b_xiqrlTOeSt)
+We use SonarQube to assess code quality. It is available at the following address: [Sonarqube](https://sonarqube.donatog.tech/dashboard?branch=main&id=UNamurCSFaculty_2324_INFOM126_GROUPE_06_AYzK-Ug0b_xiqrlTOeSt)
 
-## Build et Tests avec Jenkins
+## Build and Tests with Jenkins
 
-Nous utilisons Jenkins pour automatiser le processus de build et d'exécution des tests. Les builds sont trigger à chaque push du projet et sont disponibles à cette adresse : [Jenkins](https://jenkins.donatog.tech/job/ASE-Pipeline/)
+We use Jenkins to automate the build and test execution process. Builds are triggered with each project push and are available at this address: [Jenkins](https://jenkins.donatog.tech/job/ASE-Pipeline/)
 
-## Signaler une Issue
+## Contribute
 
-Si vous rencontrez des problèmes ou avez des suggestions, veuillez signaler une issue sur [GitHub Issues](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06/issues).
+We're delighted that you want to contribute to GuestBook! Please refer to the file [`contributor.md`](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06/blob/main/contributor.md) to get information on how to participate in the development.
 
-## Contribuer
+## Contacting us
 
-Nous sommes ravis que vous souhaitiez contribuer à GuestBook ! Consultez le fichier [`contributor.md`](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06/blob/main/contributor.md) pour obtenir des informations sur la manière de participer au développement.
+### Communication
+
+You can contact us at support.django@ase.unamur.be
+
+### Reporting issues
+
+If you encounter any issues or have suggestions for improvements, please open an issue in the [issue tracker](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06/issues)
+
+### Reporting security issues
+
+If you discover a security issue, please contact us at [security.django@ase.unamur.be](mailto:security.django@ase.unamur.be)
 
 ## Licence
-Ce projet est sous licence [MIT](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06/blob/main/LICENSE).
+This project is under the [MIT](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06/blob/main/LICENSE) license.
