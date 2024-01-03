@@ -11,7 +11,6 @@ env:
   ALLOWED_HOSTS: localhost
   DATABASE_URL: sqlite:///db.sqlite3
   PORT: 8000
-  PYTHONPATH: ./
   python_files: tests.py test_*.py *_tests.py
 
 jobs:
@@ -34,7 +33,7 @@ jobs:
         run: |
           pip install django crispy-bootstrap5 dj-database-url whitenoise psycopg2-binary pytest pytest-cov pytest-django pytest-factoryboy
           cd ./guestbook/
-          python manage.py test
+          pytest
       #- name: Run tox
       #  run: tox -e py
       - name: SonarQube Scan
