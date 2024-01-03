@@ -32,8 +32,8 @@ jobs:
       - name: Run tests
         run: |
           cd ./guestbook/
-          coverage run -m pytest
-          coverage xml
+          coverage run -m pytest --cov=./ --cov-report=xml
+          ls
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master
         env:
