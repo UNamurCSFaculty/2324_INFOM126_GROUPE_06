@@ -53,7 +53,7 @@ Thank you for your interest in contributing to our Django project! We welcome co
 
 For any communication, please refer to [this section](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06/blob/main/README.md#contacting-us)
 
-## Issue template
+### Issue template
 
 ```text
 Issue Title:
