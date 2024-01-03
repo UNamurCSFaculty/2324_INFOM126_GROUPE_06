@@ -51,14 +51,7 @@ Thank you for your interest in contributing to our Django project! We welcome co
 
 ## Communication
 
-- Feel free to ask questions or seek clarification in the project's issue tracker. You can contact us at [support.django@ase.unamur.be](mailto:support.django@ase.unamur.be).
-- Be respectful and considerate when interacting with other contributors.
-
-## Reporting issues
-- If you encounter any issues or have suggestions for improvements, please open an issue in the [issue tracker](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06).
-
-## Reporting security issues
-- If you discover a security issue, please contact us at [security.django@ase.unamur.be](mailto:security.django@ase.unamur.be).
+For any communication, please refer to [this section](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06/blob/main/README.md#contacting-us)
 
 ## Join the Community
 - Want to find others to discuss/promote our django project? Add yourself to the project discord server [here](https://discord.gg/).
