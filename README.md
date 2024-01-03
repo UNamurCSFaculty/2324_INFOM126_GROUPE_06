@@ -58,7 +58,7 @@ GuestBook est également disponible en tant que conteneur Docker. Pour exécuter
 
 ## Etat des services
 
-Le status des outils que nous utilisons sont disponible [ici](https://status.donatog.tech/)
+Le status des outils que nous utilisons est disponible [ici](https://status.donatog.tech/)
 
 ## Qualité du Code avec SonarQube
 
