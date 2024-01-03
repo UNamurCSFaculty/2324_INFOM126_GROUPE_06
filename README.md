@@ -22,18 +22,20 @@ The application is available and accessible via this link https://guestbook-info
 Make sure you have the following elements installed on your machine before setting up the project:
 
 - Python (version 3.11 recommended)
+- Docker
 
 ### Installation
 
-1. Clone the repo Git :
+Clone the repo Git :
 
     ```bash
     git clone https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06.git
     cd 2324_INFOM126_GROUPE_06
     ```
 
-## Usage of Docker
-GuestBook is also available as a Docker container. To run the application in a container, use the following commands:
+### Usage of Docker
+
+To run the application in a container, use the following commands:
 
   ```bash
   docker-compose -f docker-compose.dev.yml up --build
