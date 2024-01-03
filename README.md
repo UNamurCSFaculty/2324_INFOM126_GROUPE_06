@@ -27,10 +27,10 @@ Make sure you have the following elements installed on your machine before setti
 
 Clone the repo Git :
 
-    ```bash
-    git clone https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06.git
-    cd 2324_INFOM126_GROUPE_06
-    ```
+  ```bash
+  git clone https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06.git
+  cd 2324_INFOM126_GROUPE_06
+  ```
 
 ### Usage of Docker
 
