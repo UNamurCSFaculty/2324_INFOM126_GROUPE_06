@@ -48,10 +48,6 @@ The status of the tools we use is available [here](https://status.donatog.tech/)
 
 We use SonarQube to assess code quality. It is available at the following address: [Sonarqube](https://sonarqube.donatog.tech/dashboard?branch=main&id=UNamurCSFaculty_2324_INFOM126_GROUPE_06_AYzK-Ug0b_xiqrlTOeSt)
 
-## Build and Tests with Jenkins
-
-We use Jenkins to automate the build and test execution process. Builds are triggered with each project push and are available at this address: [Jenkins](https://jenkins.donatog.tech/job/ASE-Pipeline/)
-
 ## Contribute
 
 We're delighted that you want to contribute to GuestBook! Please refer to the file [`contributor.md`](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06/blob/main/contributor.md) to get information on how to participate in the development.
