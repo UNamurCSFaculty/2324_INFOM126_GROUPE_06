@@ -21,10 +21,10 @@ jobs:
           python-version: ${{ matrix.python }}
       - name: Install tox and any other packages
         run: pip install tox
-      - name: Set folder
-        run: cd ./guestbook/
       - name: Run tests
-        run: python ./manage.py test
+        run: |
+          cd ./guestbook/
+          python ./manage.py test
       #- name: Run tox
       #  run: tox -e py
       - name: SonarQube Scan
