@@ -109,32 +109,28 @@ Remember to be patient and open to feedback during the code review process. It's
 Feel free to adapt and customize these sections based on the specific tools and processes used in your project.
 
 ## Testing
-
 - Write unit tests to cover your code changes.
 - Ensure that all existing tests pass before submitting your changes.
 - Include any necessary documentation updates.
 
 ## Documentation
-
 - Update the project documentation if necessary.
 - Provide clear and concise explanations for new features or changes.
 
 ## Communication
 
 ### Reporting a bug
-
 Please follow the provided template to report a bug.
 
-### Naming a PR
+Please, don't use the issue tracker for support questions.
 
+### Naming a PR
 Please follow the provided template to name your pull requests (PRs).
 
 ### Other
-
 For any other communication, please refer to [this section](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06/blob/main/README.md#contacting-us)
 
 ## License Agreement
-
 By contributing to this project, you agree that your contributions will be licensed under the [project's license](). Please review and confirm your acceptance before submitting your contribution.
 
 ## Join the Community
