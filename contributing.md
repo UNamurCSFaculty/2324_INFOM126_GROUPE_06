@@ -127,6 +127,9 @@ Please, don't use the issue tracker for support questions.
 ### Naming a PR
 Please follow the provided template to name your pull requests (PRs).
 
+### Naming a branch
+Please be concise and clear when naming a branch.
+
 ### Other
 For any other communication, please refer to [this section](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06/blob/main/README.md#contacting-us)
 
