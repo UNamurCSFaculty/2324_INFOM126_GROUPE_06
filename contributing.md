@@ -95,6 +95,7 @@ We follow a collaborative code review process to maintain code quality. Here's h
 ### Submit a Pull Request (PR)
 Once you have completed your changes and the local tests pass, submit a pull request to the main repository.
 Please, do only focus on your own features. Don't try to change minimal styling issue to minimize the changes by pr.
+Therefore, we request that a large task be broken down into subtasks.
 
 ### Reviewers
 Your PR will be assigned to one or more reviewers. They will carefully examine your code for adherence to coding standards, correctness, and other best practices.
