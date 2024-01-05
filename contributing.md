@@ -33,7 +33,7 @@ Any additional context, environment details, or screenshots.
 
 ## Code Style
 
-- Follow the [PEP 8](https://www.python.org/dev/peps/pep-0008/) style guide for Python code.
+- Follow the [PEP 8](https://www.python.org/dev/peps/pep-0008/) and [SonarQube's](https://docs.sonarsource.com/sonarqube/9.9/analyzing-source-code/languages/python/) style guide for Python code.
 - Use meaningful variable and function names.
 - Variable Naming Scheme:
     - Use lowercase with words separated by underscores as necessary to improve readability (snake_case).
