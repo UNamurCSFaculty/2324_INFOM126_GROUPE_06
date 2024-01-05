@@ -51,7 +51,17 @@ Thank you for your interest in contributing to our Django project! We welcome co
 
 ## Communication
 
-For any communication, please refer to [this section](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06/blob/main/README.md#contacting-us)
+### Reporting a bug
+
+Please follow the provided template to report a bug.
+
+### Naming a PR
+
+Please follow the provided template to name your pull requests (PRs).
+
+### Other
+
+For any other communication, please refer to [this section](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_06/blob/main/README.md#contacting-us)
 
 ## Join the Community
 - Want to find others to discuss/promote our django project? Add yourself to the project discord server [here](https://discord.gg/).
