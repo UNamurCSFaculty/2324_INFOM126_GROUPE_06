@@ -28,7 +28,7 @@ jobs:
             -d '["triage"]'
         
       - name: Set Project
-        uses: actions/add-to-project@v0.5.0
+        uses: actions/add-to-project@v0.6.0
         with:
           project-url: https://github.com/orgs/UNamurCSFaculty/projects/10
           github-token: ${{ secrets.ISSUE_KEY }}
