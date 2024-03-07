@@ -33,7 +33,7 @@ Any additional context, environment details, or screenshots.
 
 ## Code Style
 
-- Follow the [PEP 8](https://www.python.org/dev/peps/pep-0008/) style guide for Python code.
+- Follow the [PEP 8](https://www.python.org/dev/peps/pep-0008/) and [SonarQube's](https://docs.sonarsource.com/sonarqube/9.9/analyzing-source-code/languages/python/) style guide for Python code.
 - Use meaningful variable and function names.
 - Variable Naming Scheme:
     - Use lowercase with words separated by underscores as necessary to improve readability (snake_case).
@@ -95,6 +95,7 @@ We follow a collaborative code review process to maintain code quality. Here's h
 ### Submit a Pull Request (PR)
 Once you have completed your changes and the local tests pass, submit a pull request to the main repository.
 Please, do only focus on your own features. Don't try to change minimal styling issue to minimize the changes by pr.
+Therefore, we request that a large task be broken down into subtasks.
 
 ### Reviewers
 Your PR will be assigned to one or more reviewers. They will carefully examine your code for adherence to coding standards, correctness, and other best practices.
